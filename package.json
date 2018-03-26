@@ -1,0 +1,20 @@
+{
+  "name": "cliNode",
+  "version": "0.0.0",
+  "description": "saturday evening posts",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "nodemon ./lib/index.js"
+  },
+  "bin": {
+    "testingPlease": "bin/news.js"
+  },
+  "repository": {},
+  "keywords": [],
+  "author": "dpd",
+  "license": "MIT",
+  "preferGlobal": "true",
+  "dependencies": {
+    "request": "^2.85.0"
+  }
+}
