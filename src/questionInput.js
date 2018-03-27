@@ -6,6 +6,10 @@ const questionPrompt = (dynamicGameData, InterfaceInstance) => {
 
     InterfaceInstance.question('\nWhat Category? (Please use the number to chose, not the name)\n$ ', (category) => {
 
+      if((Number(category).toString()) == 'NaN' || Number(category) > 6){
+        questionPrompt(dynamicGameData, InterfaceInstance)
+      }
+
       InterfaceInstance.question('\nFor Which Value?\n$ ', (value) => {
 
         if(value == 200){
@@ -19,8 +23,9 @@ const questionPrompt = (dynamicGameData, InterfaceInstance) => {
         }else if(value == 1000){
           var clueArrIndex = 4
         }else{
-          reject('Value not valid')
+          questionPrompt(dynamicGameData, InterfaceInstance)
         }
+
         resolve({category: category, clueArrIndex: clueArrIndex})
 
       })
