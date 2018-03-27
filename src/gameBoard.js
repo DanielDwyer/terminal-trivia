@@ -1,7 +1,10 @@
 'use strict'
 
+var counter = 1;
 
 const gameBoard = (gameData, II) => {
+
+  counter += 1;
 
   return new Promise((resolve, reject) => {
     if(gameData.hasOwnProperty('score')){
@@ -67,16 +70,17 @@ const gameBoard = (gameData, II) => {
           console.log(dashLine);
           counter = counter + 1;
 
-        if(noMoreQuestions){
-          console.log("No More Questions. Record and present high scores, get user info for high score");
-          console.log("Great Job! You scored:",score);
-          // II.question('\nTo Save Your Score: Enter Your Email:$ ', (email) => {
-          //
-          // })
-        }
 
       }
 
+    }
+
+    if(counter === 30){
+      console.log("No More Questions. Record and present high scores, get user info for high score");
+      console.log("Great Job! You scored:",score);
+      // II.question('\nTo Save Your Score: Enter Your Email:$ ', (email) => {
+      //
+      // })
     }
 
     resolve(gameData)
