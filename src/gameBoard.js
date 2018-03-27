@@ -15,6 +15,7 @@ const gameBoard = (gameData) => {
     console.log(" ----------------------------------------------------------------------------------------");
     console.log("| Score: "+score+"                                                                              |");
 
+    var noMoreQuestions = 1;
     for (var keysA in gameData) {
       // console.log("keysA",keysA);
       if(keysA !== 'score'){
@@ -23,22 +24,31 @@ const gameBoard = (gameData) => {
         var row200 = '   '
         if (gameData[keysA].clues[0].used === undefined) {
           row200 = 200
+          noMoreQuestions = 0
         }
         var row400 = '   '
         if (gameData[keysA].clues[1].used === undefined) {
           row400 = 400
+          noMoreQuestions = 0
         }
         var row600 = '   '
         if (gameData[keysA].clues[2].used === undefined) {
           row600 = 600
+          noMoreQuestions = 0
         }
         var row800 = '   '
         if (gameData[keysA].clues[3].used === undefined) {
           row800 = 800
+          noMoreQuestions = 0
         }
         var row1000 = '    '
         if (gameData[keysA].clues[4].used === undefined) {
           row1000 = 1000
+          noMoreQuestions = 0
+        }
+
+        if(noMoreQuestions){
+          console.log("No More Questions. Record and present high scores, get user info for high score");
         }
 
         var i = 0;
