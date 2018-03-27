@@ -5,9 +5,18 @@ const gameBoard = (gameData) => {
 
   return new Promise((resolve, reject) => {
 
+    if(gameData.hasOwnProperty('score')){
+      var score = gameData.score;
+    }else{
+      var score = 0;
+      console.log("score is 0");
+    }
+
     var counter = 1;
     console.log(" ------------------------------------------------------------------------------------");
     console.log("| Categories                                                                   Values|");
+    console.log(" ------------------------------------------------------------------------------------");
+    console.log("| Score: "+score+"                                                                          |");
 
     for (var keysA in gameData) {
 
@@ -40,9 +49,17 @@ const gameBoard = (gameData) => {
         whitespace = whitespace + ' '
       }
 
-      console.log(" ------------------------------------------------------------------------------------");
-      console.log("|   " + counter + ". " + keysA + " " + whitespace + "|  " + row200 + "  |  " + row400 + "  | " + row600 + "  |  " + row800 + "  |  " + row1000 + "  |");
-      console.log(" ------------------------------------------------------------------------------------");
+
+      var rowData = "|   " + counter + ". " + keysA + " " + whitespace + "|  " + row200 + "  |  " + row400 + "  | " + row600 + "  |  " + row800 + "  |  " + row1000 + "  |";
+
+      var dashLine = ''
+      for(var ii = 0; ii < rowData.length; ii++){
+        dashLine += '-';
+      }
+
+      console.log(dashLine);
+      console.log(rowData);
+      console.log(dashLine);
       counter = counter + 1;
     }
 

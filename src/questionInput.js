@@ -5,6 +5,7 @@ const questionPrompt = (dynamicGameData, InterfaceInstance) => {
   return new Promise((resolve, reject) => {
 
     InterfaceInstance.question('\nWhat Category? (Please use the number to chose, not the name)\n$ ', (category) => {
+
       InterfaceInstance.question('\nFor Which Value?\n$ ', (value) => {
 
         if(value == 200){
