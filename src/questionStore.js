@@ -1,6 +1,6 @@
 'use strict'
 
-var request = require('request')
+var http = require('http')
 
 const questionStore = ( categories ) => {
 
@@ -35,12 +35,16 @@ const questionRequest = ( categoryID ) => {
 
   return new Promise((resolve, reject) => {
 
-    request('http://jservice.io/api/category?id='+categoryID, function(e,r,b){
-
-      resolve(b);
-      reject(e);
-
-    })
+    http.get('http://jservice.io/api/category?id='+categoryID, res => {
+      res.setEncoding("utf8");
+      let body = "";
+      res.on("data", data => {
+        body += data;
+      });
+      res.on("end", () => {
+        resolve(body);
+      });
+    });
 
   });
 

@@ -17,7 +17,5 @@
   "keywords": [],
   "author": "danielpatrickdwyer@gmail.com",
   "license": "MIT",
-  "dependencies": {
-    "request": "^2.85.0"
-  }
+  "dependencies": {}
 }
