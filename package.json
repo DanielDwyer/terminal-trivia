@@ -1,6 +1,6 @@
 {
   "name": "terminal-trivia",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "play terminal-tivia everyday",
   "main": "./lib/index.js",
   "preferGlobal": "true",
