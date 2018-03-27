@@ -1,17 +1,20 @@
 {
-  "name": "cliNode",
-  "version": "0.0.0",
-  "description": "saturday evening posts",
+  "name": "terminal-trivia",
+  "version": "0.0.1",
+  "description": "play terminal-tivia everyday",
   "main": "./lib/index.js",
+  "preferGlobal": true,
   "scripts": {
     "start": "nodemon ./lib/index.js"
   },
   "bin": {
-    "trivia": "bin/news.js"
+    "trivia": "bin/trivia.js"
   },
-  "repository": {},
+  "repository": { "type" : "git",
+                  "url" : "https://github.com/DanielDwyerPersonal/terminal-trivia.git"
+  },
   "keywords": [],
-  "author": "dpd",
+  "author": "danielpatrickdwyer@gmail.com",
   "license": "MIT",
   "preferGlobal": "true",
   "dependencies": {
