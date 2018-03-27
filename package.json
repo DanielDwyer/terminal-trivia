@@ -7,7 +7,7 @@
     "start": "nodemon ./lib/index.js"
   },
   "bin": {
-    "testingPlease": "bin/news.js"
+    "trivia": "bin/news.js"
   },
   "repository": {},
   "keywords": [],
