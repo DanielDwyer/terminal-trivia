@@ -1,7 +1,7 @@
 {
   "name": "terminal-trivia",
   "version": "0.0.8",
-  "description": "play terminal-tivia everyday",
+  "description": "'play terminal-trivia everyday' - Nate Dogg",
   "main": "./lib/index.js",
   "preferGlobal": "true",
   "scripts": {
