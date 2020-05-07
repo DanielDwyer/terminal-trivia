@@ -1,7 +1,12 @@
 # Terminal Trivia
 
-
 This command line interface let's you be a contestant on Terminal Trivia. Put your general knowledge skills to the test.
+
+![Downloads](https://img.shields.io/npm/dw/trminal-trivias.svg)
+![Downloads](https://img.shields.io/npm/dm/terminal-trivia.svg)
+![Downloads](https://img.shields.io/npm/dt/terminal-trivia.svg)
+![npm version](https://img.shields.io/npm/v/terminal-trivia.svg)
+![License](https://img.shields.io/npm/l/terminal-trivia.svg)
 
 **Terminal Trivia Rules**
 1. You **DO NOT** need to include the phrase 'who is', 'what is', or 'when is' (etc.) in your answer
@@ -22,19 +27,6 @@ To Play
 3. Type: ```$ trivia```
 4. Have fun!  
 
-## Future
-
-I have grand visions for this project (i.e. adding double jeopardy logic, adding a double jeopardy round, adding a final jeopardy round, making a persistent high score list, etc.). This is an open source project, with an MIT license.  
-
-## Contribute
-Issue > Discussion > Coding > Pull Request > Discussion > Production
-
-## History
-Version 0.0.1 (2018-03-27) - taking codebase live
-
-## Credits
-Lead Developer - Daniel Dwyer (danielpatrickdwyer@gmail.com)
-
 ## Troubleshooting
 Contact danielpatrickdwyer@gmail.com or create issue
 
@@ -42,7 +34,7 @@ Contact danielpatrickdwyer@gmail.com or create issue
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Daniel Dwyer
+Copyright (c) 2020 Daniel Dwyer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

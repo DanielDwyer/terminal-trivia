@@ -1,9 +1,8 @@
 {
   "name": "terminal-trivia",
-  "version": "0.1.1",
-  "description": "'play terminal-trivia everyday' - Nate Dogg",
+  "version": "0.1.12",
+  "description": "'Play terminal-trivia everydayyyyyy' - Nate Dogg",
   "main": "./lib/index.js",
-  "preferGlobal": "true",
   "scripts": {
     "start": "nodemon ./lib/index.js"
   },
@@ -14,7 +13,12 @@
     "type": "git",
     "url": "https://github.com/DanielDwyerPersonal/terminal-trivia.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Jeopardy",
+    "trivia",
+    "games",
+    "cli"
+  ],
   "author": "danielpatrickdwyer@gmail.com",
   "license": "MIT",
   "dependencies": {}
