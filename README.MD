@@ -2,7 +2,7 @@
 
 This command line interface let's you be a contestant on Terminal Trivia. Put your general knowledge skills to the test.
 
-![Downloads](https://img.shields.io/npm/dw/trminal-trivias.svg)
+![Downloads](https://img.shields.io/npm/dw/terminal-trivia.svg)
 ![Downloads](https://img.shields.io/npm/dm/terminal-trivia.svg)
 ![Downloads](https://img.shields.io/npm/dt/terminal-trivia.svg)
 ![npm version](https://img.shields.io/npm/v/terminal-trivia.svg)
